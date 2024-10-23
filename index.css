@@ -1,0 +1,379 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}    
+.homepage{
+    background-color: dodgerblue;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    
+}
+.homepage div{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.header-content{
+   justify-content: left;
+   justify-content: space-between;
+   align-items: center;
+   display: grid;
+   max-height: 72px;
+   overflow: hidden;
+   grid-template-columns: 1fr 0fr;
+   
+}
+
+.headerlink{
+    background-size: contain;
+    height: 40px;
+    margin: 0;
+    background-position: 50%;
+    width: 121px;
+    overflow: hidden;
+    border-radius: 3px;
+    display: flex;
+    background-color: transparent;
+    background-image: url(images/PAJ.webp);
+    background-repeat: no-repeat;
+    transition-property: box-shadow;
+    transition-duration: .15s;
+    transition-timing-function: ease-out;
+    text-decoration: none;
+    padding: 0px;
+}
+.headerlink p{
+    color: aqua;
+    text-indent: 80px;
+    align-self: center;
+    font-size: 20px;
+    font-weight: bolder;
+    text-size-adjust: 100%;
+   
+}
+.header2{
+    display: inline-flex;
+    flex-direction: row;
+    text-decoration: none;
+    flex-direction: row;
+}
+.header2 nav{
+    margin-top: 5px;
+}
+.header2 nav ul{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    gap: 5px;
+    padding: 0%;
+    margin: 0%;
+}
+.header2 nav ul li {
+    display: inline;
+}
+.header2 nav ul li a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+h1 {
+    margin: 0;
+    
+}
+main{
+    flex-grow: 1;
+}
+.food_banner h1{
+    font-size: 32px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    text-shadow:1px 4px 5px red;
+}
+.food_banner {
+    width: 100%;
+    height: 700px;
+    background-image: url(images/PAJ.webp);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    margin-top: 5px;
+    background-attachment: local;
+}
+.food_banner p{
+    font-size: 18px;
+    text-align: center;
+    height: fit-content;
+    font-weight: bolder;
+}
+.search-dish{
+   display: inline-flex;
+   flex-direction: row;
+   flex: 1;
+    padding:100px 100px;
+    background: #fff;
+    border: none;
+    min-width: 220px;
+    border-radius: 1px;
+    margin: 200px 350px;
+    position: relative;
+    background-position-x: 500px;
+   
+}
+.search-dish div{
+    display: inline-flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 36px;
+    margin-top: -16px;
+    
+}
+.searchinput{
+  margin-top: 10px;
+  font-size: 16px;
+  width: 85%;
+}
+.search-btn{
+    padding: 8px 12px;
+    background-color: dodgerblue;
+    color: white;
+}
+.account {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo{
+    text-justify: auto;
+    color: black;
+    
+}
+
+#textLogin{
+    color: dodgerblue;
+
+}
+.loginform{
+    display: block;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.loginbutton :hover{
+    background-color: black;
+
+}
+
+.loginpassword, .loginemail{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    gap: 5px;
+    display: flex;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.food_logo{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.oyibi-restaurant{
+    text-align: center;
+    min-width: 200px;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+
+.oyibi-restaurant img{
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.oyibi-restaurant p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.oyibi-scroll{
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    padding-bottom: 10px;
+    display: flex;
+}
+#rest-h2{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+#page-footer{
+
+}
+
+.foot1{
+    background-color:dodgerblue;
+}
+.foot1-div{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+    overflow: hidden
+}
+
+.foot1-nav{
+
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+.foot1-div1{
+    display: grid;
+    grid-template-rows: 2fr 2fr ;
+    padding: auto 10px ;
+    margin: 0px;
+    
+   
+    
+}
+.foot1-div2{
+    border-radius: 0px;
+    background: wheat;
+    flex-direction: row;
+    display: inline-flex;
+    flex: 1;
+    border-bottom: 20px;
+
+}
+.foot1-div3{
+    padding: 24px;
+}
+.foot1-h3{
+    font-weight: 600;
+    margin: 0;
+    color: black;
+    font-style: oblique;
+}
+.foot1-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.foot1-ul li{
+    margin-top: 8px;
+}
+.foot1-ul li p{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.foot1-ul li p a{
+    display: block;
+    text-decoration: none;
+    border-radius: 4px;
+    color: red;
+}
+.foot1-ul li p a :hover{
+    color: pink;
+}
+.track{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 24px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px #00000014;
+    background-color: #fff;
+    max-width: 1444px;
+    overflow: hidden;
+    margin: 16px;
+}
+.track1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    background-color: #0000;
+    z-index: 2;
+    margin: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+
+
+}
+.track2{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    flex-basis: fit-content;
+    flex-wrap: wrap;
+    flex: 2 150px;
+    justify-content: space-around;
+}
+.track2 h2{
+    font-size: 40px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.track2 p{
+    align-self: self-start;
+    justify-content: space-around;
+    display: inline-flex;
+}
+.track-image{
+    align-self: auto;
+    justify-content: center;
+    z-index: 1;
+    display: inline-flexbox;
+    position: relative;
+    overflow: hidden;
+}
+
+.track-img{
+    width: 500px;
+    right: 0;
+    left: 500px;
+}
+.track-not{
+    position:absolute ;
+    width: 15%;
+    right: auto;
+    left: 0;
+    margin: 0 0 10px;
+}
