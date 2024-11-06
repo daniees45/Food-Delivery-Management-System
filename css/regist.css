@@ -42,6 +42,7 @@ label {
 
 input[type="text"],
 input[type="number"],
+input[type="password"],
 input[type="email"],
 input[type="tel"] {
     width: 100%;
@@ -63,6 +64,7 @@ input[type="radio"] {
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="email"]:focus,
+input[type="password"]:focus,
 input[type="tel"]:focus {
     border-color: #007bff;
     outline: none;
@@ -102,7 +104,7 @@ input[type="submit"]:hover {
 nav, .food_logo{
     margin-top: 5px;
 }
-nav ul {
+/*nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -121,8 +123,10 @@ nav ul li a {
     font-size: 18px;
     padding: 10px 15px;       
     border-radius: 5px;       
-    /*transition: background-color 0.3s ease;  */
+    /*transition: background-color 0.3s ease;  
 }
+
+*/
 
 nav ul li a:hover {
     background-color: rgb(158, 158, 147);  

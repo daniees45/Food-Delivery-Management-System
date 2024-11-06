@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAJ Food Service- Policy</title>
+    <title>PAJ Food Service - About Us</title>
+    
     <link rel="stylesheet" href="regist.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="login.css">
@@ -13,11 +14,11 @@
         <div class="food_logo">PAJ Food Delivery</div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="random.html">Login</a></li>
-                <li><a href="resgistration.html">Register</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="resgistration.php">Register</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                
+
                 
             </ul>
             <div class="searchContainer">
@@ -31,14 +32,9 @@
     </header>
 
     <main>
-        <h1><b>Privacy Policy</b></h1>
-        <p>Your privacy is important to us. This policy explains how we handle your personal information.</p>
-        <h2>Information Collection</h2>
-        <p>We collect information you provide when you create an account or place an order.</p>
-        <h2>Information Use</h2>
-        <p>We use your information to process orders and enhance your experience.</p>
-        <h2>Security</h2>
-        <p>We take the security of your data seriously and implement measures to protect it.</p>
+        <h1>About Us</h1>
+        <p>We are a leading food delivery service dedicated to providing the best dining experience at home.</p>
+        <p>Our mission is to connect you with your favorite restaurants and deliver delicious meals to your doorstep.</p>
     </main>
 
     <footer>
@@ -47,7 +43,6 @@
         <a href="#">FAQs</a> |
         <a href="policy.html">Privacy Policy</a> |
         <a href="#">Terms & Conditions</a>
-    
 
 <p>&copy; 2024 PAJ Delivery Service</p>
 </footer>
