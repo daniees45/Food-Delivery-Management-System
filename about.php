@@ -10,25 +10,32 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <header>
-        <div class="food_logo">PAJ Food Delivery</div>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="resgistration.php">Register</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
+<header>
+        <div class="homepage">
+            <div>
                 
-            </ul>
-            <div class="searchContainer">
-                <input type="text" placeholder="Search dishes" id="search_dishes">
-                <button id="search-button">Search</button>
+                <div class="header-content">
+                    <img src="images/PAJ.webp" alt="logo">
+                        <a href="" class="headerlink"><p>PAJ</p></a>
+                </div>
+                <div class="header2">
+                    <nav>
+                        <ul id="menulink">
+                            <li><a href="index.php">Home</a></li>
+                            
+                            <li><select onchange="window.location.href=this.value;" id="loginselect">
+                                <option value="" disabled selected>Login Options</option>
+                                <option value="login.php" target="_blank">Customer</option>
+                                <option value="" target="_blank">Delivery</option>
+                            </select></li>
+                            <li><a href="resgistration.php">Register</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </nav>
+        </div>
 
-      
-       
     </header>
 
     <main>

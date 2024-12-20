@@ -1,0 +1,177 @@
+/* Global styles and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: white;
+    color: dodgerblue;
+}
+
+/* Container layout */
+.container-setting {
+    display: flex;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Sidebar styles */
+.setting-bar {
+    flex: 0 0 250px;
+    background: dodgerblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.setting-bar #name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.setting-bar #Useremail {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.setting-bar ul {
+    list-style: none;
+}
+
+.setting-bar ul li {
+    margin-bottom: 5px;
+}
+
+.setting-bar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.setting-bar ul li a:hover {
+    background: #f1f1f1;
+    color: #2980b9;
+}
+
+.setting-bar ul li a i {
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Main content area */
+main {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-p {
+    font-size: 1.5rem;
+    color: dodgerblue;
+    margin-bottom: 30px;
+}
+
+/* Form styles */
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    color: dodgerblue;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+hr {
+    margin: 15px 0;
+    border: none;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+button {
+    background: #2980b9;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #3498db;
+}
+
+/* Result message styling */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+#result:not(:empty) {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Delete account link special styling */
+#delete {
+    color: #e74c3c !important;
+}
+
+#delete:hover {
+    background: #fde8e7 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container-setting {
+        flex-direction: column;
+    }
+    
+    .setting-bar {
+        flex: none;
+        width: 100%;
+    }
+    
+    main {
+        padding: 20px;
+    }
+}
+
+.hidden{
+    display: none;
+}

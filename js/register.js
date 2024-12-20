@@ -15,9 +15,10 @@ function fetchData() {
 function verification(){
     let x = document.forms["registration"]["age"].value;
     if (x < 18) {
-        alert("Age must be 18 and above");
+        alert("Age must be 18");
         return false;
     } else {
+        alert("Successful registration");
         return true;
     }
 }
@@ -30,4 +31,41 @@ function checkPassword() {
     } else {
         return true;
     }
+}
+
+function success() {
+    let x = document.forms["registration"]["age"].value;
+    let pass = document.forms["registration"]["password"].value;
+    if (x < 18 && pass.length < 8) {
+        alert("Age must be 18 and above and minimum password length is 8");
+        return false;
+    } else {
+        alert("Successful registration");
+        return true;
+    }
+}
+
+function checkEmail() {
+    document.getElementById('email').addEventListener("blur", function(event){
+        event.preventDefault();
+
+        const email = this.value;
+
+        if (email) {
+            fetch("checkExists.php",{
+                method: "POST",
+                headers : {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({email : email})
+            })
+            .then(response => response.json())
+            .then(data => {
+                if(data.exists){
+                    alert("Email already exists in the database");
+                }
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    })
 }

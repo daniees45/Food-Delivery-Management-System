@@ -1,35 +1,92 @@
-document.getElementById('login-form').addEventListener('submit', async (event) => {
-    event.preventDefault(); // Prevents default form submission
+document.getElementById('role').addEventListener('change', function(){
+    const Value = this.value;
+    const User = document.getElementById('customer');
+    const Rider =document.getElementById('riders');
 
-    // Get form data
-    const username = document.getElementById('emailPhone').value;
-    const password = document.getElementById('password').value;
-
-    try {
-        // Send a POST request with form data to the server
-        const response = await fetch('/api/login', {
-            method: 'POST',
-            headers: {
+    if (Value === 'customer') {
+        document.getElementById('login-form').addEventListener('submit', async(e) => {
+            e.preventDefault();
+            const email =document.getElementById('emailPhone').value;
+            const password =document.getElementById('password').value;
+    
+            const response =await fetch('login_Authenticate.php', {
+                method : 'POST',
+                headers :{
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({username, password }),
-        });
-
-        // Parse the JSON response
-        const result = await response.json();
-
-        // Handle the response
-        const messageElement = document.getElementById('login-message');
-        if (response.ok && result.success) {
-            messageElement.textContent = 'Login successful!';
-            messageElement.style.color = 'green';
-            // Redirect to a different page or load additional content as needed
-        } else {
-            messageElement.textContent = result.message || 'Login failed. Please check your credentials.';
-            messageElement.style.color = 'red';
-        }
-    } catch (error) {
-        console.error('Error:', error);
-        document.getElementById('login-message').textContent = 'An error occurred. Please try again later.';
+            body: JSON.stringify({email, password})
+            });
+    
+            const data = await response.json();
+            if (data.success) {
+                localStorage.setItem('loggedIn', 'true');
+                sessionStorage.setItem('id', data.id);
+    
+                sessionStorage.setItem('surname', data.surname);
+                sessionStorage.setItem('firstname', data.firstname);
+                sessionStorage.setItem('email', data.email);
+                sessionStorage.setItem('gender', data.gender);
+                sessionStorage.setItem('phone_number', data.phone_number);
+                window.location.href = "index.php";
+                
+            }else{
+                alert(data.error);
+            }
+    
+            
+        })
+    } else if ( Value === 'rider'){
+        document.getElementById('login-form').addEventListener('submit', async(e) => {
+            e.preventDefault();
+            const email =document.getElementById('emailPhone').value;
+            const password =document.getElementById('password').value;
+    
+            const response =await fetch('login_Authenticate.php', {
+                method : 'POST',
+                headers :{
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({email, password})
+            });
+    
+            const data = await response.json();
+            if (data.success) {
+                localStorage.setItem('loggedIn', 'true');
+                sessionStorage.setItem('id', data.id);
+    
+                sessionStorage.setItem('surname', data.surname);
+                sessionStorage.setItem('firstname', data.firstname);
+                sessionStorage.setItem('email', data.email);
+                sessionStorage.setItem('gender', data.gender);
+                sessionStorage.setItem('phone_number', data.phone_number);
+                window.location.href = "index.php";
+                
+            }else{
+                alert(data.error);
+            }
+    
+            
+        })
     }
 });
+
+
+
+
+
+    document.getElementById('role').addEventListener('change', function(){
+        const Value = this.value;
+        const User = document.getElementById('customer');
+        const Rider =document.getElementById('riders');
+
+        if (Value === 'customer') {
+            User.hidden = false;
+            Rider.hidden = true;
+        } else if ( Value === 'rider'){
+            User.hidden = true;
+            Rider.hidden = false;
+        }
+    });
+
+
+

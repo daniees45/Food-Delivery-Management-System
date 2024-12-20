@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 32px;
+            text-align: center;
+            
+            
+        }
+
+    </style>
+    
+</head>
+<body onload="setTimeout(LoadWeb, 7000)">
+
+    <h1>An error has occurred</h1>
+    <p>Wait while you are redirect back if not loading click the link below</p>
+    <p><a href="http://localhost/Delivery%20System/resgistration.php">Registration</a></p>
+    <!-- <p onclick="goBack()">back</p> -->
+
+</body>
+<script>
+    function goBack(){
+        window.history.back();
+    }
+
+    function LoadWeb(){
+        location.assign("http://localhost/Delivery%20System/resgistration.php");
+    }
+</script>
+</html>

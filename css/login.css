@@ -16,6 +16,9 @@
         header h1 {
             margin: 0;
         }
+        .hidden{
+            display: none;
+        }
         .container-1{
             width: 100%;
             max-width: 400px;

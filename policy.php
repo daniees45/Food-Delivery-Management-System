@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAJ Food Service- Policy</title>
-    <link rel="stylesheet" href="regist.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/regist.css">
+    <link rel="stylesheet" href="css/index.css">
+   
 </head>
 <body>
-    <header>
+<header>
         <div class="homepage">
             <div>
                 
                 <div class="header-content">
-                        <a href="index.php" class="headerlink"><p>PAJ</p></a>
+                    <img src="images/PAJ.webp" alt="logo">
+                        <a href="" class="headerlink"><p>PAJ</p></a>
                 </div>
                 <div class="header2">
                     <nav>
-                        <ul>
+                        <ul id="menulink">
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="login.php">Login</a></li>
-                            <li><a href="resgistration.php">Register</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            
-                            
+                            <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
