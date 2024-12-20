@@ -1,0 +1,113 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+       /* header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }*/
+        header h1 {
+            margin: 0;
+        }
+        .hidden{
+            display: none;
+        }
+        .container-1{
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       }
+       #texth {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        #emailPhone,
+        #password {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .login{
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login:hover {
+            background-color: #218838;
+        }
+        .forgotpassword {
+            text-align: right;
+            margin-bottom: 15px;
+        }
+        .forgotpassword a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .forgotpassword a:hover {
+            text-decoration: underline;
+        }
+        .register{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .register-btn {
+            padding: 10px;
+            margin: 10px 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            
+            background-color: #db4437;
+        }
+        .register-btn a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+        }
+        
+        /*footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: dodgerblue;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+ */
